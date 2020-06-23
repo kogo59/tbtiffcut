@@ -17,8 +17,6 @@
  *  along with tbtiffcut.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
-
 /*
  * Preferences.cpp
  *
@@ -28,7 +26,6 @@
 
 #include <memory>
 #include <wx/fileconf.h>
-
 #include "utils.h"
 #include "Preferences.h"
 
@@ -73,6 +70,6 @@ void Preferences::read()
 	OutputDir = config.Read(utils::OutputDir, p);
 	TileDim = static_cast<TileDimension>(config.Read(utils::TileDim, 1));
 	ColDep = config.Read(utils::ColDep, 0L);
-	BuildTAR = config.Read(utils::BuildTAR,0L);
+	BuildTAR = config.Read(utils::BuildTAR, 0L);
 }
 

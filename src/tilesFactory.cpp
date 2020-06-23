@@ -62,6 +62,8 @@ Tile::Tile( int x, int y, const wxFileName &tiff_name, const wxBitmap &bmp,
  */
 TileFactory::TileFactory( const wxFileName &fname, int tile_size, int depth )
 {
+	wxLogNull noerrormessages;
+
 	tiff_file = fname;
 
 	tiff_image.LoadFile(tiff_file.GetFullPath());

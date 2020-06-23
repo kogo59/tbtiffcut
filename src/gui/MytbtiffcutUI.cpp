@@ -496,7 +496,7 @@ void MyTbtiffcutUI::OnAbout( wxCommandEvent &event )
 	info.SetDescription(_("Generate tiles from geotiff images for trekbuddy."));
 	info.SetCopyright("(C) 2020");
 	info.SetLicence(wxString::FromAscii(TC_LICENSE));
-	info.AddDeveloper("Konrad Golling");
+	info.AddDeveloper("KoGo");
 	wxAboutBox(info, this);
 
 	event.Skip(false);

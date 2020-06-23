@@ -251,8 +251,6 @@ void OziMap::WriteMapFile( const wxFileName &m )
 	mf_output.emplace_back(
 			wxString::Format(OziMapFile_mmpll, 4, LowerLeftX, LowerLeftY));
 
-	mf_output.emplace_back(wxString::Format(OziMapFile4));
-
 	// ozi.java, method writeMapFile
 	// extracted from Mobile Atlas Creator (for trekbuddy)
 	double midLat = ((UpperLeftY + LowerLeftY) / 2.0) * M_PI / 180;
