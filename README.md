@@ -4,5 +4,7 @@ Eclipse CDT project.
 
 ## Dependencies
 wxWidgets 3.0.5
+
 GDAL
+
 MinGW
